@@ -19,4 +19,4 @@ num_classes = 10  # for 10 sea animal species
 
 checkpoint_path = '/kaggle/working/project_Abhijeet_Patel/checkpoints/final_weights.pth'
 test_dir = './data'
-#data_dir = test_dir IF YOU WANT TO JUST PREDICT AND NOT TRAIN
+data_dir = test_dir #IF YOU WANT TO JUST PREDICT AND NOT TRAIN
