@@ -18,7 +18,7 @@ I classified 10 distinct animals using a dataset of 5900 images.
 
 ## Key Features
 - **Input Size**: 150×150
-- **Optimizer**: Adam
+- **Optimizer**: Adam with weight_decay
 - **Loss Function**: Cross-Entropy Loss with `label_smoothing=0.1`
 - **Learning Rate Scheduler**: Cosine Annealing LR Scheduler
 - **Number of Classes**: 10
@@ -35,3 +35,4 @@ Low validation accuracy is expected due to noisy features like landmass, etc.
 
 ## Additional Notes
 - **Validation Accuracy**: ~50% despite using CosineAnnealingLR and multiple architecture tweaks.
+- **Expected data for testing**: For predict.py file, the classes are sorted based on training datasetpath. It can be changed to classes inside ./data folder if above thing doesn't work.
