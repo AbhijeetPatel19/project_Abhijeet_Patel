@@ -37,7 +37,7 @@ def classify_sea_animals(list_of_image_paths):
     model.eval()
     
     # Get class names (assuming you have them)
-    class_names = sorted(os.listdir(os.path.join(data_dir, 'Training')))
+    class_names = sorted(os.listdir(os.path.join(data_dir)))
     
     # Process each image
     predictions = []
