@@ -35,4 +35,4 @@ Low validation accuracy is expected due to noisy features like landmass, etc.
 
 ## Additional Notes
 - **Validation Accuracy**: ~50% despite using CosineAnnealingLR and multiple architecture tweaks.
-- **Expected data for testing**: For predict.py file, the classes are sorted based on training datasetpath. It can be changed to classes inside ./data folder if above thing doesn't work.
+- **Expected data for testing**: For predict.py file, two option I have given (with comments in py file) for whether you are using it for prediction or for training on new set. The second option is disabled by hashtag in config.py file so please have a look at config.py file.
