@@ -10,11 +10,12 @@ I classified 10 distinct animals using a dataset of 5900 images.
 - **Initial Layers**:
   - 3×3 Convolution (stride=1, padding=1) + BatchNorm + ReLU
   - 3×3 MaxPooling (stride=2)
+  - 0.5 dropout to avoid overfitting
 - **Three Residual Block Units**:
-  - Each with two 3×3 convolutions (padding=1) and batch normalization.
+  - Each with two 3×3 convolutions (padding=1) and batch normalization + 0.3 dropout
 - **Output Layers**:
   - Adaptive average pooling → 1×1 feature vector
-  - Fully connected layer for class logits
+  - Two Fully connected layer for class logits
 
 ## Key Features
 - **Input Size**: 150×150
